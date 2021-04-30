@@ -26,6 +26,6 @@ model_ingredient.train(recipe_sentences, epochs = 10, total_examples=model_ingre
 model_ingredient.save("./_model_ingredient") #학습한 모델 저장
 model_ingredient.wv.save("./_model_ingredient_wv") #학습한 모델의 wv 저장
 
-similarity = model_ingredient.wv.most_similar(positive=['모짜렐라'])
+similarity = model_ingredient.wv.most_similar(positive=['소세지'])
 print(similarity)
 
